@@ -1,0 +1,16 @@
+---
+description: Universal Anti-AI-Slop Web Engineering, UX, ERP Architecture, SEO & Security Rules
+globs: ["**/*.tsx", "**/*.jsx", "**/*.ts", "**/*.js", "**/*.css", "**/*.html", "**/*.vue", "**/*.svelte", "**/*.astro"]
+alwaysApply: true
+---
+
+# anti-slop-web-kit Active Rules
+
+1. **Typography**: Never use `Inter`, `Roboto`, `Geist`, `Space Grotesk`, `Bricolage Grotesque`, `Instrument Sans`, `Fraunces`, `Playfair Display`, or `JetBrains Mono`. Prefer `Switzer`, `Familjen Grotesk`, `Poppins`, `Plus Jakarta Sans`, `DM Sans`, `Satoshi`, or `Aeonik`. Use `tracking-[-0.03em]`, `leading-[1.1]` on display headings, and `tabular-nums` on numbers.
+2. **Color Discipline**: Max 3 core colors (1 dark base, 1 warm/neutral light base like `#F6F5F1`, 1 single CTA protagonist accent with warm-vs-cool contrast). No rainbow badge clutter, no unnecessary gradients.
+3. **Anti-AI-Slop**: Remove decorative uppercase eyebrows/pills above titles, trailing periods on headings, fake `01/02/03` numbering, and excessive card borders. Enforce concentric radii (`inner = outer - padding`).
+4. **Mobile UX**: Always use `100dvh` instead of `100vh`. Keep all inputs/selects/textareas `>= 16px` (`text-base`) on mobile to prevent iOS zoom. Use `inline-grid` on tabs to prevent text-bold width jitter.
+5. **Motion**: `150–250ms` `ease-out`, zero bounce, `active:scale-[0.97]`, shared `layoutId` tab indicators, respect `prefers-reduced-motion`.
+6. **Security & SEO**: Use `crypto.randomUUID()`, validate auth/CORS/rate-limits server-side, maintain 1 `<h1>` per page, valid `robots.txt` + `sitemap.xml` + JSON-LD, and resilient error fallbacks.
+
+For deep guidance, read `skills/*/SKILL.md` and `workflows/*.md`.
